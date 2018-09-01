@@ -36,7 +36,7 @@ print('y_test shape:', y_test.shape)
 #Building the model
 print('Building the model')
 model=Sequential()
-model.add(Dense(700,input_shape=(max_words,),activation='relu'))
+model.add(Dense(695,input_shape=(max_words,),activation='relu'))
 model.add(Dense(num_classes,activation='softmax'))
 #Compiling the model
 print('Compiling model')
