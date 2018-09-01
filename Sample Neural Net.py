@@ -42,7 +42,7 @@ model.add(Dense(num_classes,activation='softmax'))
 print('Compiling model')
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 print('Fitting data to model')
-batch_size=20
+batch_size=129
 epochs=4
 #Fitting data to model
 history=model.fit(x_train,y_train,batch_size=batch_size,epochs=epochs,validation_split=0.3)
