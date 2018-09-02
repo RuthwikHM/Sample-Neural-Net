@@ -36,14 +36,14 @@ print('y_test shape:', y_test.shape)
 #Building the model
 print('Building the model')
 model=Sequential()
-model.add(Dense(700,input_shape=(max_words,),activation='relu'))
+model.add(Dense(695,input_shape=(max_words,),activation='relu'))
 model.add(Dense(num_classes,activation='softmax'))
 #Compiling the model
 print('Compiling model')
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
 print('Fitting data to model')
-batch_size=20
-epochs=7
+batch_size=129
+epochs=4
 #Fitting data to model
 history=model.fit(x_train,y_train,batch_size=batch_size,epochs=epochs,validation_split=0.3)
 print('Evaluating the test data on model')
